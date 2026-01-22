@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombie Shooter – Login / Sign Up</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Zombie Shooter</h1>
+    <div class="tab-btns">
+      <button id="loginTab" class="active">Login</button>
+      <button id="signupTab">Sign Up</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+      <div class="form-group">
+        <label>Username or Email</label>
+        <input type="text" id="loginUser" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="loginPass" required>
+      </div>
+      <button type="submit" class="submit-btn">Play Now</button>
+      <div class="extra"><a href="#">Forgot Password?</a></div>
+    </form>
+
+    <!-- SIGN UP FORM -->
+    <form id="signupForm" style="display:none;">
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" id="signupUser" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="signupEmail" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="signupPass" required>
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" id="signupConfirm" required>
+      </div>
+      <button type="submit" class="submit-btn">Create Account</button>
+    </form>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
